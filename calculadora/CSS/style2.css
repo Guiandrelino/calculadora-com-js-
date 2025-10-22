@@ -1,0 +1,89 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #2d3436;
+}
+
+/* ===== TÍTULO ===== */
+h2 {
+  font-size: 1.8rem;
+  color: #0984e3;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== INPUTS ===== */
+input[type="number"],
+input[readonly] {
+  width: 120px;
+  padding: 0.6rem;
+  margin: 0.5rem;
+  border-radius: 8px;
+  border: 2px solid #dfe6e9;
+  text-align: center;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+input[type="number"]:focus {
+  border-color: #0984e3;
+  outline: none;
+  box-shadow: 0 0 5px rgba(9, 132, 227, 0.3);
+}
+
+input[readonly] {
+  margin-top: 1rem;
+  width: 260px;
+  background: #f1f2f6;
+  font-weight: bold;
+  border: 2px solid #b2bec3;
+}
+
+/* ===== BOTÕES ===== */
+button {
+  background: #0984e3;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  margin: 0.3rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background: #74b9ff;
+  transform: scale(1.05);
+}
+
+/* ===== CARD SIMPLES ===== */
+body > * {
+  animation: fadeIn 0.8s ease;
+}
+
+/* ===== ANIMAÇÃO ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

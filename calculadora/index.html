@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calculadora — Opção 2</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Calculadora (Opção 2)</h1>
+
+    <div class="inputs-row">
+      <label class="field">
+        <span>N1</span>
+        <input id="n1" type="number" step="any" placeholder="Digite N1" />
+      </label>
+
+      <label class="field">
+        <span>N2</span>
+        <input id="n2" type="number" step="any" placeholder="Digite N2" />
+      </label>
+
+      <div class="actions">
+        <button id="calcBtn" class="btn">Calcular</button>
+      </div>
+    </div>
+
+    <div class="results">
+      <label class="result-field"><span>Soma</span><input id="soma" readonly /></label>
+      <label class="result-field"><span>Sub</span><input id="sub" readonly /></label>
+      <label class="result-field"><span>Mul</span><input id="mul" readonly /></label>
+      <label class="result-field"><span>Div</span><input id="div" readonly /></label>
+    </div>
+
+</main>
+
+  <script src="JS/script.js"></script>
+</body>
+</html>
